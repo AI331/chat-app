@@ -11,7 +11,7 @@ RSpec.describe Message, type: :model do
     end
 
     it 'contentが空でも保存できること' do
-      @@message.content = ''
+      @message.content = ''
       expect(@message).to be_valid
     end
 
